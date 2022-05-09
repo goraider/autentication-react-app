@@ -1,4 +1,4 @@
-import { types } from "../types/types";
+import { types } from '../types/types';
 
 export const setError = ( err ) =>({
     type: types.uiSetError,
@@ -6,5 +6,5 @@ export const setError = ( err ) =>({
 });
 
 export const removeError = () =>({
-    type: types.removeError
+    type: types.uiRemoveError
 });

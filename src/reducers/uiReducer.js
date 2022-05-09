@@ -24,7 +24,7 @@ export const uiReducer = ( state = initialstate, action) => {
 
     
         default:
-            break;
+            return state;
     }
 
 
