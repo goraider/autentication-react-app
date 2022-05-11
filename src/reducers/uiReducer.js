@@ -6,6 +6,7 @@ const initialstate = {
 }
 
 export const uiReducer = ( state = initialstate, action) => {
+    
 
     switch ( action.type ) {
 
@@ -32,6 +33,13 @@ export const uiReducer = ( state = initialstate, action) => {
             return {
                 ...state,
                 loading: false
+            }
+
+        case types.uiUnknownUser:
+            console.log(action);
+            return {
+                ...state,
+                msgError: action.payload
             }
         
         default:

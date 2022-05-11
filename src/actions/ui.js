@@ -16,3 +16,8 @@ export const startLoading = () =>({
 export const finishLoading = () =>({
     type: types.uiFinishLoading,
 });
+
+export const setUnknownUser = ( err ) =>({
+    type: types.uiUnknownUser,
+    payload: err
+});
